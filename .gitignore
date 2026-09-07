@@ -1,0 +1,11 @@
+#---IDEs jetBrains (WebSton,PyCharm,etc.)---
+.ideia/
+*.iml
+#---vscode--
+.vscode/
+#---sistema operacional---
+.DS_Store
+Thumbs.db
+#--Depedêcias / build (úteis quando o projeto crescer)---
+nod_modules/
+dist/--

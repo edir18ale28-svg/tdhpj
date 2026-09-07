@@ -14,8 +14,76 @@
                 <i class="ph ph-check-squarre-offset"></i>
            <span>TD.H</span>
             </div>
+            <nav class="menu">
+                <button class="nav-link active"  data-tab="tarefas">
+                    <i class="ph ph-liist-checks"></i>Tarefas</button>
+                <button class="nav-link" data-tab="calendario"><i class="ph ph-calendar">
+                </i>Calendário</button>
+                <button class="vav-link" data-tab="dashboard"><i class="ph ph-chart-pie"></i>Dashboard</button>
+            </nav>
              
         </aside>
-    </dIV>
+        <!--ÁREA PRINCIIPAL-->
+        <main class="main-content">
+
+            <!--PAINEL PINCIPAL-->
+
+            <header>
+                <h1 id="page-tile">Painel de Tarefas</h1>
+                <div class="stats-container">
+                    <div class="stat-card green">
+                        <span class="stat-label">Concluiídas (ok)</span>
+                        <h3 id="stat-ok">0%</h3>
+                    </div>
+                    <div class="stat-card red">
+                        <span class="stat-label">Pendentes (Falta)</span>
+                        <h3 id="stat-pending">0%</h3>
+                    </div>
+                    <div class="stat-blue">
+                        <span class="stat-label">Progresso Total</span>
+                   <h3 id="stat-pending">0 / 0</h3>
+                    </div>
+                </div>
+            </header>
+
+            <!--CONTEUDO: TAREFAS-->
+            <section id="tab-tarefas" class="tab-content active">
+                <div class="card-box">
+                    <h3>Cadastrar Novas Tarafas</h3>
+                    <form id="task-form">
+                        <input type="text" id="task-tile" placeholder="Descrição..." required>
+                        <input type="date" id="task-date">
+                        <button type="submit" >Adicionar</button>
+                    </form>
+                </div>
+
+                <div class="card-box">
+                    <h3>Minhas Tarefas</h3>
+                    <ul id="task-list"></ul>
+                </div>
+            </section>
+
+            <!--CONTEÚDO: CALENDÁRIO-->
+
+            <section id="tab-calendário" class="=tab-content">
+                <div class="card-box">
+                    <h3>Visão Mensal</h3>
+                    <div class="calendar-grid" id="calendar-grid"></div>
+
+                </div>
+            </section>
+<!--CONTEÚDO: DASHBOARD-->
+<section class="tab-dashboard" class="tab-content">
+    <div class="card-box">
+<h3>Relatório de Produtividade</h3>
+<div class="progress-bar-container">
+<div id="progress-bar-fill"></div>
+    </div>
+
+   </section>
+
+  </main>
+  </dIV>
+
 </body>
 </html>
